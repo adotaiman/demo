@@ -1,0 +1,435 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: #f8f9fa;
+}
+header{
+    position:fixed;
+    background:  white ;
+   left:0;top:0;right:0;
+    display:flex;
+    align-items: center;
+    padding:10px 8%;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(76, 66, 69,0.3)
+}
+header .logo{
+    font-weight: bolder;
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+
+}
+header .logo li{
+    color:red;
+    list-style: none;
+    
+}
+header .logo li a{
+    color:black;
+   font-weight: 900;
+    text-decoration: none;
+}
+header .nav-bar {
+ align-items: center;
+ justify-content: center;
+ margin-right: 15px;
+   
+    }
+header .nav-bar a{
+    font-size: 13px;
+    padding: 5px 15px ;
+    color:black;
+    text-decoration: none;
+   
+    }
+    
+    header .nav-bar a:hover
+    {
+        color:rgb( 243, 30, 104);
+    }
+    .contact a{
+        text-decoration: none;
+        font-size: 13px;
+        color: black;
+        margin-right: 30px;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+ 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f1f1f1;
+    margin: 10px 15px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+   color:rgb( 243, 30, 104);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+  section{
+  
+  }
+.container{
+    height:130vh;
+    width:100%;
+    background: white;
+   /* padding:50px 10%;*/
+   
+
+}
+.container h1{
+    margin: 50px;
+    position: absolute;
+    top:20%;
+    right:5px;
+    left:10px;
+    padding:8px 5%;
+    font-size: 80px;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+}
+.container .row {
+
+    margin: 60px;
+    position: absolute;
+    top:84%;
+    right:5px;
+    left:10px;
+    display: flex;
+    gap:20px;
+}
+.container .row .row-right {
+flex-basis: 45%;
+  font-size: 14px; 
+  padding:8px 3%;
+}
+.container .row .row-right span {
+      font-style: bolder;
+      font-weight: 700;
+      
+    }
+    .container .row .row-mid,
+    .container .row .row-left {
+        flex-basis: 20%;
+          font-size: 14px; 
+          padding:10px 9%;
+        
+          
+
+        }
+        .container .row .row-mid a {
+           display: flex;
+              flex-direction: column;
+              margin-left: 90px;
+              color:rgb( 243, 30, 104);
+    
+            }
+            .container .row .row-left a {
+                display: flex;
+                   flex-direction: column;
+                    margin-bottom: 5px;
+                    color:rgb( 243, 30, 104);
+                 }
+            .container .row .row-mid a:not(:last-child)  {
+                margin-bottom: 5px; 
+              }
+              
+              .container .row .row-left a:last-child {
+                margin-bottom: 0;
+              }
+              .container .row .row-mid a:hover,
+              .container .row .row-left a:hover{
+               text-decoration: none;
+                 }
+   #con{
+display:flex;
+padding: 10px 8%;
+margin-top:10%;
+height:30vh
+   }
+   .heading{
+    font-size: 46px;
+    color:black;
+    flex-basis: 40%;
+    margin-left: 13%;
+   }  
+   .content{
+    font-size: 15px;
+    flex-basis: 35%;
+    margin-left: 45px;
+   } 
+   .content span{
+    font-style: bolder;
+    font-weight: 700;
+   } 
+   #btn{
+    background: rgb(243, 30, 104);
+    border:1px solid rgb(243, 30, 104) ;
+    padding: 15px 25px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 10px;
+    position: absolute;
+    left:56%;
+    top:168%;
+   } 
+   #btn:hover{
+    background: white;
+    border:1px solid white ;
+    color:  rgb(243, 30, 104);
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+   }
+   .line{
+    width: 58px;
+    height:2px;
+    background:rgb(243, 30, 104);
+    border:1px solid rgb(243, 30, 104);
+    position: absolute;
+    bottom: 5px;
+    left:10%;
+    top:157%;
+   }
+   .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  .main-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(40rem,2fr));
+    gap:5px;
+    margin-right: 10%;
+  }
+
+ .main {
+    padding: 10px 8%;
+    margin-left: 15%;
+    margin-right: 0;
+
+  }
+
+  .main-img {
+    position: relative; 
+    display: inline-block; 
+  }
+  .main-img img {
+    width: 400px;
+    height: 300px;
+    position: relative; 
+    margin-bottom: 6%;
+    
+  }
+  .main-img .main-box{
+    width: 0;
+    height: 80%;
+    background: rgb(243, 30, 104);
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    transition:  0.3s ease;
+    z-index: -1; 
+   }
+   .main-img:hover .main-box {
+    width: 400px;
+    height:300px;
+  }
+  .main-text {
+    width:100%;
+   }
+   .main-text a {
+    color: rgb(243, 30, 104);
+font-size: 18px;
+margin-bottom: 8%;
+   }
+   .main-text a:hover{
+    text-decoration: none;
+   }
+  
+ .main-text p{
+    font-size: 15px;
+ }
+ 
+ #p-btn{
+  background: rgb(243, 30, 104);
+  border:1px solid rgb(243, 30, 104) ;
+  color: white;
+position: absolute;
+left:56%;
+    top:363%;
+    padding: 15px 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 10px;
+ }
+ #p-btn:hover{
+  background: white;
+  border:1px solid white ;
+  color:  rgb(243, 30, 104);
+  box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.2);
+ }
+ .p-line{
+  width: 58px;
+  height:2px;
+  background:rgb(243, 30, 104);
+  border:1px solid rgb(243, 30, 104);
+  position: absolute;
+  bottom: 5px;
+  left:15%;
+  top:352%;
+ }
+ #con a{
+  color:rgb(167, 164, 165);
+  font-size: 15px;
+  position: absolute;
+left:66%;
+    top:365%;
+ }
+ #con a:hover{
+  color:rgb(243, 30, 104);
+  text-decoration: none;
+ }
+ .process{
+  background: white;
+  padding:10px 8%;
+ }
+ .box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 4%;
+}
+ .card{
+  width:330px;
+  height:230px;
+  background:white;
+  border:3px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  margin-right: 25px;
+ }
+ .card:hover{
+  
+  border:3px solid rgb(243, 30, 104) ;
+ 
+ }
+
+ .content .card-no{
+font-size: 13px;
+color:rgb(167, 164, 165);
+font-weight: 800;
+margin-bottom: 15px;
+margin-top: 10%;
+ }
+
+ .content .head{
+  font-size: 20px;
+  color:rgb(243, 30, 104);
+  font-weight: 900;
+  margin-bottom: 10px;
+
+   }
+   .content .description{
+    font-size: 15px;
+    margin-right: 10px;
+    padding-right: 5px;
+  
+     }
+     .red-border {
+      border-color: rgb(243, 30, 104);
+    }
+    .clients{
+      background: black;
+      height:100vh;
+      padding:10px 8%;
+    }
+    #c-con{
+      display:flex;
+      padding: 10px 8%;
+      height:30vh
+         }
+         .c-heading{
+          font-size: 46px;
+          color:white;
+          flex-basis: 40%;
+          margin-left: 13%;
+          margin-top: 10%;
+         }  
+         .c-content{
+          font-size: 15px;
+          flex-basis: 35%;
+          margin-left: 45px;
+color: white;
+margin-top: 11%;
+         } 
+         .c-content span{
+          font-weight: 900;
+         }  
+         .c-line{
+          width: 58px;
+          height:2px;
+          background:rgb(243, 30, 104);
+          border:1px solid rgb(243, 30, 104);
+          position: absolute;
+          bottom: 5px;
+          left:11%;
+          top:492%;
+         }       
+  .rec-box{
+    display: flex;
+    margin-top: 10%;
+  } 
+  .rectangle{
+    width:540px;
+    height:200px;
+    margin-bottom: 10%;
+    background: white;
+    margin-right: 25px;
+  }
+  .rec-image {
+    margin-left: 4%;
+    padding: 10px;
+  } 
+  .rec-image img{
+    width:180px;
+    margin-top: 15px;
+  }  
+  .r-body{
+    margin-top: 1%;
+    margin-left: 4%;
+    padding: 10px;
+  }   
+  .r-body h1{
+    font-size: 18px;
+    color:rgb(243, 30, 104);
+    font-weight: 900;
+
+  }
+  .r-body p{
+    font-size: 15px;
+    margin-right: 10px;
+    padding-right: 5px;
+  }
